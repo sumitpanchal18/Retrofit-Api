@@ -20,6 +20,7 @@ class CommentApiActivity : AppCompatActivity() {
         val id = 18
 
         val apiCall = CommentApiClient.api.getComments(id)
+        Log.d(TAG, "onCreate: ")
 
         apiCall.enqueue(object : Callback<List<CommentDataClassItem>?> {
             override fun onResponse(
