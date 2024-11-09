@@ -4,15 +4,10 @@ import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
-import com.example.retrofitapikotlin.R
 import com.example.retrofitapikotlin.databinding.ActivityImageJsonHolderBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class ImageJsonHolderActivity : AppCompatActivity() {
     lateinit var binding: ActivityImageJsonHolderBinding
