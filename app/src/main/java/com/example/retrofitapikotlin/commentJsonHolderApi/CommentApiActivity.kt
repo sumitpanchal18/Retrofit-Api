@@ -18,8 +18,9 @@ class CommentApiActivity : AppCompatActivity() {
         binding = ActivityCommentApiBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val id = 18
         CoroutineScope(Dispatchers.Main).launch {
-            val apiCall = CommentApiClient.api.getComments()
+            val apiCall = CommentApiClient.api.getComments(id)
             binding.progressBar.visibility = View.GONE
             try {
                 if (apiCall.isSuccessful) {
