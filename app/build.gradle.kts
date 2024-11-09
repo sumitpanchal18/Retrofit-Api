@@ -62,5 +62,8 @@ dependencies {
 
     implementation (libs.kotlinx.coroutines.core)
 
+    // HTTP request
+    implementation (libs.okhttp)
+
 
 }

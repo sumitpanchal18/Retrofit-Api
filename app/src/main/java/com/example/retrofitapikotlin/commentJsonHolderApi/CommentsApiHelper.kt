@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object CommentsApiHelper {
 
-    val baseUrl = "https://jsonplaceholder.typicode.com/"
+    private val baseUrl = "https://jsonplaceholder.typicode.com/"
 
     val retrofit: Retrofit by lazy {
         Retrofit.Builder()
