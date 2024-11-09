@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ImageRetrofitHelper {
     val baseUrl = "https://jsonplaceholder.typicode.com"
 
-    val retrofit : Retrofit by lazy {
+    val retrofit: Retrofit by lazy {
         Retrofit.Builder()
             .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create())
@@ -14,8 +14,8 @@ object ImageRetrofitHelper {
     }
 }
 
-object ImageApiClient{
-    val imageApiService : ImageJsonInterface by lazy {
+object ImageApiClient {
+    val imageApiService: ImageJsonInterface by lazy {
         ImageRetrofitHelper.retrofit.create(ImageJsonInterface::class.java)
     }
 }

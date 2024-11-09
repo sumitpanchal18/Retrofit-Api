@@ -17,9 +17,10 @@
 
         <activity
             android:name=".jsonHolderApi.JsonHolderApiActivity"
+
             android:exported="false" />
         <activity
-            android:name=".imageJsonHolder.ImageJsonHolderActivity"
+            android:name=".commentJsonHolderApi.CommentApiActivity"
             android:exported="false" />
         <activity
             android:name=".JokesApi.JokesMain"
@@ -28,7 +29,7 @@
             android:name=".quotesApi.QuotesApiActivity"
             android:exported="true" />
         <activity
-            android:name=".http.HttpActivity"
+            android:name=".imageJsonHolder.ImageJsonHolderActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,9 +37,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".commentJsonHolderApi.CommentApiActivity"
-            android:exported="false" />
     </application>
 
 </manifest>
