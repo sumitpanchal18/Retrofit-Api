@@ -18,7 +18,7 @@ object CommentsApiHelper {
 }
 
 object CommentApiClient {
- val api: CommentApi by lazy {
-     CommentsApiHelper.retrofit.create(CommentApi::class.java)
- }
+    val api: CommentApi by lazy {
+        CommentsApiHelper.retrofit.create(CommentApi::class.java)
+    }
 }
